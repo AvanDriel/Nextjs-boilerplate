@@ -1,0 +1,42 @@
+@import '@styles/resources';
+
+.root {
+  padding: 1.2rem 4rem;
+  font-size: 1.4rem;
+  font-weight: 700;
+  letter-spacing: 0.1rem;
+  border-radius: 10rem;
+  border: 0;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  height: 5.6rem;
+  max-height: 5.6rem;
+  cursor: pointer;
+  box-sizing: border-box;
+  text-decoration: none;
+  z-index: z(cta);
+  min-width: max-content;
+
+  &:focus {
+    outline: none;
+  }
+
+  @include xs {
+    font-size: 1.6rem;
+    line-height: 3.2rem;
+    padding: 1.2rem 5.1rem;
+  }
+}
+
+.primary {
+  position: relative;
+  background-color: palette(primary);
+  color: palette(white);
+}
+
+.secondary {
+  position: relative;
+  background-color: palette(secondary);
+  color: palette(black);
+}

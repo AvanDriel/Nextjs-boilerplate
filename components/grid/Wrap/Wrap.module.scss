@@ -1,0 +1,19 @@
+@import '@styles/resources';
+
+.root {
+  box-sizing: border-box;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: $outer-margin;
+  padding-left: $outer-margin;
+  flex-grow: 1;
+  max-width: $wrapper-width;
+}
+
+.relative {
+  position: relative;
+}
+
+.inlineFlex {
+  display: inline-flex;
+}

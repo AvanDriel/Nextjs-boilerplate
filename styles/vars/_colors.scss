@@ -1,0 +1,15 @@
+$_palette: (
+  white: #fff,
+  black: #000,
+);
+
+@function palette($color) {
+  @if map-has-key($_palette, $color) {
+    @return map-get($_palette, $color);
+  }
+
+  @warn 'Unfortunately, no value could be retrieved for `#{$color}`. '
+    + 'Please make sure it is defined in `$_palette` map.';
+
+  @return #000;
+}

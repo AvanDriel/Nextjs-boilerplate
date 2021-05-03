@@ -1,0 +1,58 @@
+@import './resources';
+@import './fonts/roboto-mono';
+@import './core/typography';
+
+html {
+  font-size: 62.5%;
+
+  // Add cross-browser antialiasing
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  width: 100%;
+
+  // Other base styling
+  text-rendering: optimizeLegibility;
+  -webkit-text-size-adjust: none;
+  position: relative;
+}
+
+body {
+  font-family: $font-body;
+  font-size: 1.6rem;
+  line-height: 3.2rem;
+  letter-spacing: 4%;
+  font-weight: 400;
+  margin: 0 auto;
+  overflow-x: hidden;
+  overflow-y: auto;
+  scroll-behavior: smooth;
+  color: palette(black);
+
+  strong,
+  b {
+    font-weight: 700;
+  }
+
+  @include md {
+    font-size: 1.8rem;
+    line-height: 3.6rem;
+  }
+}
+
+* {
+  &,
+  &::before,
+  &::after {
+    box-sizing: border-box;
+  }
+}
+
+input,
+textarea,
+select,
+button {
+  font-size: inherit;
+  font-family: inherit;
+  color: inherit;
+  letter-spacing: inherit;
+}

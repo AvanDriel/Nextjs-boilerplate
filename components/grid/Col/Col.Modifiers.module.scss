@@ -1,0 +1,21 @@
+@import '@styles/resources';
+
+@include breakpoints('.first') {
+  order: -1;
+}
+
+@include breakpoints('.last') {
+  order: 1;
+}
+
+@include breakpoints('.top') {
+  align-self: flex-start;
+}
+
+@include breakpoints('.middle') {
+  align-self: center;
+}
+
+@include breakpoints('.bottom') {
+  align-self: flex-end;
+}
