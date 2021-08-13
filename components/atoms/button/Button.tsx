@@ -2,6 +2,11 @@ import cls from 'classnames'
 // Styles
 import styles from './Button.module.scss'
 
+/*  Button.tsx
+ *  A pretty straightforward button, with the option of multiple variations based on passed props
+ *  For client-side transitions between routes, it is recommended to wrap in the Link component from next/link
+ */
+
 type ButtonVariations = 'primary' | 'secondary'
 
 type ButtonTypes = 'button' | 'submit'
@@ -24,7 +29,7 @@ const Button: React.FunctionComponent<IProps> = ({
   type = 'button',
   href,
   onClick,
-  newTab = true,
+  newTab,
 }) => {
   const classes = cls([styles.root], variation && styles[variation])
 

@@ -2,6 +2,10 @@
 import { Wrap, Row, Col } from '@components/grid'
 import { Button } from '@atoms/button'
 
+/*  Index.tsx
+ *  Page that gets loaded on the base url '/'
+ */
+
 export default function Home() {
   return (
     <div>

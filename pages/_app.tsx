@@ -5,6 +5,12 @@ import Head from 'next/head'
 import '@styles/globals.scss'
 import layoutStyles from '@styles/core/layout.module.scss'
 
+/*  App.tsx
+ *  This is the main entrypoint of the application
+ *  Wrapping components, such as the navigation of footer can be inserted here
+ *  The <Component> elements loads the page corresponding to the url, on base route this is index.tsx
+ */
+
 function MyApp({ Component, pageProps }) {
   return (
     <>
